@@ -22,41 +22,47 @@ const Header = () => {
                 </div>
                 <div className="socials flex md:gap-3 sm:gap-2 gap-1 items-center">
                     <a className="btn-pink">
-                        <FaFacebookF  className="sm:w-6 sm:h-6 w-3 h-3"/>
+                        <FaFacebookF  className="sm:w-6 sm:h-6"/>
                     </a>
                     <a className="btn-pink">
-                        <RiInstagramFill className="sm:w-6 sm:h-6 w-3 h-3"/>
+                        <RiInstagramFill className="sm:w-6 sm:h-6"/>
                     </a>
                     <a className="btn-pink">
-                        <PiTiktokLogoFill  className="sm:w-6 sm:h-6 w-3 h-3"/>
+                        <PiTiktokLogoFill  className="sm:w-6 sm:h-6"/>
                     </a>
                     <a className="btn-pink">
-                        <FaLinkedinIn  className="sm:w-6 sm:h-6 w-3 h-3" />
+                        <FaLinkedinIn  className="sm:w-6 sm:h-6" />
                     </a>
                 </div>
             </nav>
-            <section className="h-full grid grid-cols-2 sm:pt-[30px] pt-12">
+            <section className="h-full grid sm:grid-cols-2 sm:pt-[30px] pt-12">
                 <div className="section__left flex flex-col justify-center">
-                    <h1 className="font-extrabold max-w-[550px] sm:mb-16 mb-10">Hər şey bir fincan qəhvə ilə başlayır</h1>
-                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 max-w-96 mx-auto mb-4">
-                        <a className="sm:px-3 sm:py-2 px-2 py-1 border border-gray-300 rounded-lg flex items-center gap-3 md:text-base sm:text-sm text-xs"><FaAppStoreIos className="sm:w-6 sm:h-6 w-4 h-4" color="blue" /> App Store</a>
-                        <a className="sm:px-3 sm:py-2 px-2 py-1 border border-gray-300 rounded-lg flex items-center gap-3 md:text-base sm:text-sm text-xs"><BsGooglePlay className="sm:w-6 sm:h-6 w-4 h-4" color="blue" /> Google Play</a>
+                    <h1 className="font-extrabold sm:max-w-[550px] sm:mb-16 mb-10 sm:text-left text-center mx-auto max-w-[300px]">Hər şey bir fincan qəhvə ilə başlayır!</h1>
+                    <div className="sm:grid hidden sm:grid-cols-2 grid-cols-1 gap-3 max-w-96 mx-auto mb-4">
+                        <a className="px-3 py-2 border border-gray-300 rounded-lg flex items-center gap-3 md:text-sm sm:text-sm text-xs"><FaAppStoreIos className="w-6 h-6"  color="blue" /> App Store</a>
+                        <a className="px-3 py-2  border border-gray-300 rounded-lg flex items-center gap-3 md:text-sm sm:text-sm text-xs"><BsGooglePlay className="w-6 h-6"  color="blue" /> Google Play</a>
                     </div>
                 </div>
-                <div className="section__right relative flex justify-center items-start px-5 pb-16">
-                    <img src={mobileapp} className="phone-img-1 object-fit" alt="mobile-app" />
-                    <div className="absolute sm:bottom-0 bottom-8 sm:left-20 left-12 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-28">
-                        <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1">
-                            <FaStar className="md:w-4 sm:w-3 w-2"/>
-                            <FaStar className="md:w-4 sm:w-3 w-2"/>
-                            <FaStar className="md:w-4 sm:w-3 w-2"/>
-                            <FaStar className="md:w-4 sm:w-3 w-2"/>
-                            <FaStar className="md:w-4 sm:w-3 w-2"/>
+                <div className="section__right relative sm:flex-row flex-col flex justify-center items-start px-5 pb-16 sm:w-full w-4/5 mx-auto">
+                   <div className="relative pb-20">
+                    <img src={mobileapp} className="phone-img object-fit" alt="mobile-app" />
+                    <div className="absolute sm:bottom-0 bottom-6 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
+                        <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1 mb-2">
+                            <FaStar className="w-4"/>
+                            <FaStar className="w-4 "/>
+                            <FaStar className="w-4 "/>
+                            <FaStar className="w-4"/>
+                            <FaStar className="w-4 "/>
 
                         </div>
-                        <p className="text-gray lg:text-sm sm:text-xs text-[6px]">
+                        <p className="text-gray lg:text-sm sm:text-xs text-xs">
                             4.9 out of 5 Overall Star Rating for All Local Business.
                         </p>
+                    </div>
+                   </div>
+                    <div className="sm:hidden grid grid-cols-2 gap-3 max-w-96 mx-auto mb-4">
+                        <a className="px-3 py-2 border border-gray-300 rounded-lg flex items-center gap-3 md:text-sm sm:text-sm text-xs"><FaAppStoreIos className="w-6 h-6"  color="blue" /> App Store</a>
+                        <a className="px-3 py-2  border border-gray-300 rounded-lg flex items-center gap-3 md:text-sm sm:text-sm text-xs"><BsGooglePlay className="w-6 h-6"  color="blue" /> Google Play</a>
                     </div>
                 </div>
 
