@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="logo flex items-center md:min-w-60 sm:min-w-40 sm:max-w-60 max-w-44 min-w-36 md:max-w-72">
                     <img alt="logo" className="object-contain" src={logo} />
                 </div>
-                <div className="socials flex md:gap-3 sm:gap-2 gap-1 items-center">
+                <div className="socials flex md:gap-3 gap-2  items-center">
                     <a className="btn-pink">
                         <FaFacebookF  className="sm:w-6 sm:h-6"/>
                     </a>
@@ -35,7 +35,7 @@ const Header = () => {
                     </a>
                 </div>
             </nav>
-            <section className="h-full grid sm:grid-cols-2 sm:pt-[30px] pt-12">
+            <div className="h-full grid sm:grid-cols-2 sm:pt-[30px] pt-12">
                 <div className="section__left flex flex-col justify-center">
                     <h1 className="font-extrabold sm:max-w-[550px] sm:mb-16 mb-10 sm:text-left text-center mx-auto max-w-[300px]">Hər şey bir fincan qəhvə ilə başlayır!</h1>
                     <div className="sm:grid hidden sm:grid-cols-2 grid-cols-1 gap-3 max-w-96 mx-auto mb-4">
@@ -66,7 +66,7 @@ const Header = () => {
                     </div>
                 </div>
 
-            </section>
+            </div>
         </header>
     )
 }
