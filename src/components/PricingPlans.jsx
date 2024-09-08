@@ -25,7 +25,7 @@ const PricingPlans = () => {
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 1 }}
                 viewport={{ once: true }}
-                className="absolute right-0 -top-4 lg:max-w-80 md:max-w-60 md:block hidden" src={rightcup} alt="cup" />
+                className="absolute right-0 -top-4 lg:max-w-80 md:max-w-60 max-w-44" src={rightcup} alt="cup" />
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-20 mb-6 ">
                 {/* Free Plan */}
                 <motion.div

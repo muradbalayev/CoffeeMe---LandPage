@@ -100,7 +100,6 @@ const Header = () => {
                                 <FaStar className="w-4 " />
                                 <FaStar className="w-4" />
                                 <FaStar className="w-4 " />
-
                             </div>
                             <p className="text-gray lg:text-sm sm:text-xs text-xs">
                                 4.9 out of 5 Overall Star Rating for All Local Business.

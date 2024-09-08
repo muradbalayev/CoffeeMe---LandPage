@@ -21,8 +21,8 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="absolute left-0 top-16 lg:max-w-80 max-w-60 md:block hidden" src={leftcup} alt="cup" />
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 lg:px-5">
+                className="absolute left-0 sm:top-16 top-48 lg:max-w-80 sm:max-w-60 max-w-36  " src={leftcup} alt="cup" />
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 sm:px-5 px-12">
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"
                     initial={{ scale: 0.7, opacity: 0 }}
@@ -30,12 +30,12 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
-                    <h3 className="font-bold text-2xl">Loyalty Card</h3>
-                    <p className="text-gray">
+                    <h3 className="font-bold sm:text-2xl text-xl">Loyalty Card</h3>
+                    <p className="text-gray sm:text-base text-sm ">
                         CoffeeMe den 10 məhsul alana 1 məhsul hədiyyə.
                     </p>
-                    <div className="min-h-48 flex items-center justify-center">
-                        <IoCard className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-40 h-40 lg:pt-10" color="#214440" />
+                    <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
+                        <IoCard className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10" color="#214440" />
                     </div>
                 </motion.div>
                 <motion.div
@@ -45,12 +45,12 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                 >
-                    <h3 className="font-bold text-2xl">Streaks</h3>
-                    <p className="text-gray">
+                    <h3 className="font-bold sm:text-2xl text-xl">Streaks</h3>
+                    <p className="text-gray sm:text-base text-sm">
                         7 gün ardarda CoffeeMe dən məhsul al və Premiumdan faydalan.
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
-                        <LuFlame className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-40 h-40" color="#214440" />
+                        <LuFlame className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-32 h-32" color="#214440" />
                     </div>
                 </motion.div>
                 <motion.div
@@ -60,12 +60,12 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    <h3 className="font-bold text-2xl">Plans</h3>
-                    <p className="text-gray">
+                    <h3 className="font-bold sm:text-2xl text-xl">Plans</h3>
+                    <p className="text-gray sm:text-base text-sm">
                         CoffeeMe Free və Premium planlarından faydalana bilərsiniz.
                     </p>
-                    <div className="min-h-48 flex items-center justify-center">
-                        <BiCoffeeTogo className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-40 h-40 lg:pt-10" color="#214440" />
+                    <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
+                        <BiCoffeeTogo className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10" color="#214440" />
                     </div>
                 </motion.div>
             </div>
