@@ -5,8 +5,13 @@ import leftcup from "../assets/leftcup.png";
 
 import mobileapp2 from "../assets/mobileapp2.png";
 import mobileapp3 from "../assets/mobileapp3.png";
+import SubmitModal from "./Modal";
+import { useState } from "react";
 
 const OrderNow = () => {
+    const [modalShow, setModalShow] = useState(false);
+
+
     return (
         <>
             <section className="flex flex-col-reverse lg:flex-row relative items-center justify-between py-16">
@@ -21,7 +26,7 @@ const OrderNow = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     />
-                    <motion.button
+                    <motion.button onClick={() => setModalShow(true)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="px-8 py-4 lg:hidden block mx-auto bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
@@ -51,7 +56,7 @@ const OrderNow = () => {
                         Saniyələr içində tətbiqdən sevdiyiniz kofeşoplarda sevdiyiniz
                         qəhvələri sifariş edin
                     </h1>
-                    <motion.button
+                    <motion.button onClick={() => setModalShow(true)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="px-8 py-4 lg:block hidden bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
@@ -72,7 +77,7 @@ const OrderNow = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     />
-                    <motion.button
+                    <motion.button onClick={() => setModalShow(true)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="lg:hidden mx-auto block px-8 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
@@ -101,7 +106,7 @@ const OrderNow = () => {
                     <h1 className="text-[#1B1B1D] text-4xl lg:text-5xl font-extrabold lg:max-w-full max-w-[500px]">
                         Coffeme-yə öncədən qoşul və 1 ay pulsuz premium abunəlik qazan
                     </h1>
-                    <motion.button
+                    <motion.button onClick={() => setModalShow(true)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="lg:block hidden px-8 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
@@ -136,6 +141,10 @@ const OrderNow = () => {
                         viewport={{ once: true }}
                     />
                 </div>
+                <SubmitModal
+                    isOpen={modalShow}
+                    onClose={() => setModalShow(false)}
+                />
             </section>
         </>
     );

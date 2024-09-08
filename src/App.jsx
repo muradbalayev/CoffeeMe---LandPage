@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './components/About'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import OrderNow from './components/OrderNow'
 import PricingPlans from './components/PricingPlans'
@@ -14,6 +15,7 @@ function App() {
       <About />
       <PricingPlans />
       <OrderNow/>
+      <Footer/>
       </div>
     </div>
   )
