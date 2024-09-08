@@ -38,7 +38,8 @@
     "email": "E-mail",
     "notification":"Bildirimlərdən xəbərdar olmaq istəyirsinizmi?",
     "subscribe": "Abunə olun",
-    "contact": "CoffeeMe ilə əlaqə"
+    "contact": "CoffeeMe ilə əlaqə",
+    "thanks": "Abunə olduğunuz üçün təşəkkürlər!"
   },
   "en": {
     "order": "ORDER NOW",
@@ -79,7 +80,8 @@
     "email": "Email",
     "notification":"Want to be notified of notifications?",
     "subscribe": "Subscribe",
-    "contact": "Contact CoffeeMe"
+    "contact": "Contact CoffeeMe",
+    "thanks": "Thank you for subscribing!"
   },
   "ru": {
     "order": "ЗАКАЗАТЬ СЕЙЧАС",
@@ -120,7 +122,8 @@
     "email": "Электронная почта",
     "notification":"Хотите получать уведомления об уведомлениях?",
     "subscribe": "Подписаться",
-    "contact": "Связаться с CoffeeMe"
+    "contact": "Связаться с CoffeeMe",
+    "thanks": "Спасибо за подписку!"
 
   }
 }

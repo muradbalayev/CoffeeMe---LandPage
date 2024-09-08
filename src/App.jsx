@@ -1,4 +1,5 @@
 
+import { Toaster } from 'react-hot-toast'
 import './App.css'
 import About from './components/About'
 import Footer from './components/Footer'
@@ -21,7 +22,20 @@ function App() {
           <Footer />
         </div>
       </div>
-
+      <Toaster
+          containerClassName="toast"
+          position="top-center"
+          toastOptions={{
+            duration: 3000,
+            className: "custom-toast",
+            style: {
+              backgroundColor: "#fd0",
+              fontWeight: "600",
+              padding: "16px",
+              color: "#214440",
+            },
+          }}
+        />
     </LanguageProvider>
   )
 }

@@ -159,6 +159,75 @@ footer .btn{
     transition-delay: 0.15s;
   }
 
+  .checkbox-wrapper-44 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox-wrapper-44 label {
+    display: inline-block;
+  }
+
+  .checkbox-wrapper-44 .check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-44 .check:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .checkbox-wrapper-44 .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-44 .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-44 .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  .checkbox-wrapper-44 .check:hover:before {
+    opacity: 1;
+  }
+  .checkbox-wrapper-44 .check:hover svg {
+    stroke: #4285f4;
+  }
+  .checkbox-wrapper-44 input[type="checkbox"]:checked + .check svg {
+    stroke: #4285f4;
+  }
+  .checkbox-wrapper-44 input[type="checkbox"]:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  .checkbox-wrapper-44 input[type="checkbox"]:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+
+
 @media (min-width: 773px) {
   header {
     padding-left: 60px;

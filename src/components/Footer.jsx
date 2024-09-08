@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import translations from "../translations.json";
 import { LanguageContext } from "../context/languageContext";
 import { useContext } from "react";
+import toast from "react-hot-toast";
 
 const Footer = () => {
     const { language } = useContext(LanguageContext);
@@ -17,6 +18,8 @@ const Footer = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        toast.success(translations[language]["thanks"]);
     }
     return (
         <footer className="py-10">
@@ -33,11 +36,13 @@ const Footer = () => {
                             <form onSubmit={handleSubmit} className="flex flex-col md:items-start items-center md:gap-4">
                                 <input
                                     type="text"
+                                    required
                                     placeholder={translations[language]["fullname"]}
                                     className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
                                 />
                                 <input
                                     type="email"
+                                    required
                                     placeholder={translations[language]["email"]}
                                     className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
                                 />
