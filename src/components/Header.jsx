@@ -48,7 +48,7 @@ const Header = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         className="font-extrabold sm:max-w-[550px] sm:mb-16 mb-10 sm:text-left text-center mx-auto max-w-[300px]">Hər şey bir fincan qəhvə ilə başlayır!</motion.h1>
                     <div className="sm:grid hidden sm:grid-cols-2 grid-cols-1 gap-3 max-w-96 mx-auto mb-4">
                         <a className="px-3 py-2 border border-gray-300 rounded-lg flex items-center gap-3 md:text-sm sm:text-sm text-xs"><FaAppStoreIos className="w-6 h-6" color="blue" /> App Store</a>
@@ -58,7 +58,7 @@ const Header = () => {
                 <motion.div
                     initial={{ x: 50 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                     className="section__right relative sm:flex-row flex-col flex justify-center items-start px-5 pb-16 w-full mx-auto">
                     <div className="relative sm:pb-12 pb-20 sm:px-0 px-5">
                         <img src={mobileapp} className="phone-img object-fit" alt="mobile-app" />
