@@ -90,10 +90,10 @@ const Header = () => {
                       duration: 1, 
                       ease: [0.25, 0.1, 0.25, 1],
                   }}
-                    className="section__right relative sm:flex-row flex-col flex justify-center items-start px-5 pb-16 w-full mx-auto">
-                    <div className="relative sm:pb-12 pb-20 sm:px-0 px-5">
+                    className="section__right relative sm:flex-row flex-col flex justify-center items-start sm:px-5 px-0 pb-16 w-full mx-auto">
+                    <div className="relative pb-12 sm:pr-0 pr-3">
                         <img src={mobileapp} className="phone-img object-fit" alt="mobile-app" />
-                        <div className="absolute sm:bottom-20 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
+                        <div className="absolute sm:bottom-28 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
                             <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1 mb-2">
                                 <FaStar className="w-4" />
                                 <FaStar className="w-4 " />
