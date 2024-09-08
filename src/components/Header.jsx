@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 
 import logo from '../assets/logo.png'
-import mobileapp from '../assets/mobileapp.png'
+import mobileapp from '../assets/image.png'
 
 const Header = () => {
     return (
@@ -93,7 +93,7 @@ const Header = () => {
                     className="section__right relative sm:flex-row flex-col flex justify-center items-start px-5 pb-16 w-full mx-auto">
                     <div className="relative sm:pb-12 pb-20 sm:px-0 px-5">
                         <img src={mobileapp} className="phone-img object-fit" alt="mobile-app" />
-                        <div className="absolute sm:bottom-0 bottom-5 left-14 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
+                        <div className="absolute sm:bottom-20 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
                             <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1 mb-2">
                                 <FaStar className="w-4" />
                                 <FaStar className="w-4 " />
