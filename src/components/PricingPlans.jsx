@@ -33,7 +33,7 @@ const PricingPlans = () => {
                 {/* Free Plan */}
                 <motion.div
                     className="px-6 py-10 shadow-lg bg-white border rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    initial={{ scale: 0.9, opacity: 0, y: 50 }}
                     whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
@@ -62,7 +62,7 @@ const PricingPlans = () => {
                 {/* Premium Plan */}
                 <motion.div
                     className="px-6 py-10 shadow-lg bg-green text-white border border-gray-200 rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    initial={{ scale: 0.9, opacity: 0, y: 50 }}
                     whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}

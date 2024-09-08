@@ -10,7 +10,7 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Poppins","Montserrat" "sans-serif";
+  font-family: Poppins, "Montserrat", "sans-serif";
 }
 
 :root {

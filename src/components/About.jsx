@@ -45,13 +45,12 @@ const About = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 sm:px-5 px-12">
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0}}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
                     <h3 className="font-bold sm:text-2xl text-xl">
-                        {" "}
                         {translations[language]["loyalty-card"]}
                     </h3>
                     <p className="text-gray sm:text-base text-sm ">
@@ -66,8 +65,8 @@ const About = () => {
                 </motion.div>
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                 >
@@ -84,8 +83,8 @@ const About = () => {
                 </motion.div>
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     viewport={{ once: true }}
                 >
