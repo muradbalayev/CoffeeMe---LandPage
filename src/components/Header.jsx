@@ -46,7 +46,7 @@ const Header = () => {
                 initial={{ y: -20 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1], }}
-                className="w-full flex gap-12 justify-between items-center ">
+                className="w-full flex gap-12 justify-between sm:items-center items-start">
                 <div className="logo flex items-center md:min-w-60 sm:min-w-40 sm:max-w-60 max-w-44 min-w-36 md:max-w-72">
                     <img alt="logo" className="object-contain" src={logo} />
                 </div>
