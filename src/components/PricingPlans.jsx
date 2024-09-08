@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+    import { motion } from "framer-motion";
 import { FaCircleCheck } from "react-icons/fa6";
 import rightcup from '../assets/rightcup.png'
 
@@ -21,7 +21,7 @@ const PricingPlans = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="absolute right-0 top-0 max-w-80 md:block hidden" src={rightcup} alt="cup" />
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-20 mb-24 ">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-20 mb-6 ">
                 {/* Free Plan */}
                 <motion.div
                     className="px-8 py-10 shadow-lg bg-white  rounded-2xl"
