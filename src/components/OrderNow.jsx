@@ -26,13 +26,6 @@ const OrderNow = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     />
-                    <motion.button onClick={() => setModalShow(true)}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-8 py-4 lg:hidden block mx-auto bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
-                    >
-                        ORDER NOW
-                    </motion.button>
                 </div>
                 <motion.img
                     initial={{ opacity: 0, x: -50, scale: 0.85 }}
@@ -56,13 +49,6 @@ const OrderNow = () => {
                         Saniyələr içində tətbiqdən sevdiyiniz kofeşoplarda sevdiyiniz
                         qəhvələri sifariş edin
                     </h1>
-                    <motion.button onClick={() => setModalShow(true)}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-8 py-4 lg:block hidden bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
-                    >
-                        ORDER NOW
-                    </motion.button>
                 </motion.div>
             </section>
             <section className="flex flex-col-reverse lg:flex-row relative items-center justify-between pt-16">

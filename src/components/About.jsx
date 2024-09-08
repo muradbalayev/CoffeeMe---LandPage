@@ -22,8 +22,6 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="absolute left-0 top-16 lg:max-w-80 max-w-60 md:block hidden" src={leftcup} alt="cup" />
-          
-
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 lg:px-5">
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"

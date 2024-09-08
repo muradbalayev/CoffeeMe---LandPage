@@ -23,15 +23,15 @@ const PricingPlans = () => {
             <motion.img
                 initial={{ opacity: 0, x: 50, scale: 0.85 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                transition={{ duration: 0.8, delay: 1 }}
                 viewport={{ once: true }}
                 className="absolute right-0 -top-4 lg:max-w-80 md:max-w-60 md:block hidden" src={rightcup} alt="cup" />
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-20 mb-6 ">
                 {/* Free Plan */}
                 <motion.div
                     className="px-6 py-10 shadow-lg bg-white border rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
@@ -47,22 +47,15 @@ const PricingPlans = () => {
                         <li className="flex items-center gap-1"><FaCircleCheck className="text-green" />  Public Share & Comments</li>
                         <li className="flex items-center gap-1"><FaCircleCheck className="text-green" />  Chat Support</li>
                         <li className="flex items-center gap-1"><FaCircleCheck className="text-green" />  New income apps</li>
-                        <motion.button onClick={() => setModalShow(true)}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.8 }}
-                            className=" mx-auto  px-6 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
-                        >
-                            ORDER NOW
-                        </motion.button>
                     </ul>
                 </motion.div>
 
                 {/* Premium Plan */}
                 <motion.div
                     className="px-6 py-10 shadow-lg bg-green text-white border border-gray-200 rounded-2xl"
-                    initial={{ scale: 0.7, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.7, delay: 0.3 }}
+                    initial={{ scale: 0.7, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
                     <h3 className="font-medium text-3xl text-center text-pink mb-4">Premium</h3>
