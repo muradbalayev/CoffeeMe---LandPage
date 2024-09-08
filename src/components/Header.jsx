@@ -203,6 +203,7 @@ const Header = () => {
                             src={mobileapp}
                             className="phone-img object-fit"
                             alt="mobile-app"
+                             loading="lazy"
                         />
                         <div className="absolute sm:bottom-28 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
                             <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1 mb-2">
