@@ -8,10 +8,15 @@ import mobileapp3 from "../assets/mobileapp3.png";
 
 import bgimage from "../assets/bgimagetrs.png"
 import SubmitModal from "./Modal";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import translations from "../translations.json";
+import { LanguageContext } from "../context/languageContext";
+
 
 const OrderNow = () => {
     const [modalShow, setModalShow] = useState(false);
+    const { language } = useContext(LanguageContext);
+
 
 
     return (
@@ -53,7 +58,7 @@ const OrderNow = () => {
                     </h1>
                 </motion.div>
             </section>
-            
+
             <section className="flex flex-col-reverse lg:flex-row relative items-center justify-between sm:pt-16 pt-10">
                 {/* Left Side: Image */}
                 <div className="lg:w-[45%] w-3/4">
@@ -71,7 +76,7 @@ const OrderNow = () => {
                         whileTap={{ scale: 0.95 }}
                         className="lg:hidden mx-auto block px-8 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
                     >
-                        ORDER NOW
+                        {translations[language]["order"]}
                     </motion.button>
                 </div>
                 <motion.img
@@ -93,14 +98,14 @@ const OrderNow = () => {
                     viewport={{ once: true }}
                 >
                     <h1 className="text-[#1B1B1D] text-4xl lg:text-5xl font-extrabold lg:max-w-full max-w-[500px]">
-                        Coffeme-yə öncədən qoşul və 1 ay pulsuz premium abunəlik qazan
+                        {translations[language]["section-title-2"]}
                     </h1>
                     <motion.button onClick={() => setModalShow(true)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="lg:block hidden px-8 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
                     >
-                        ORDER NOW
+                        {translations[language]["order"]}
                     </motion.button>
                 </motion.div>
             </section>
@@ -114,17 +119,17 @@ const OrderNow = () => {
                     viewport={{ once: true }}
                 >
                     <h1 className="text-[#1B1B1D] text-4xl lg:text-5xl font-extrabold lg:max-w-full max-w-[500px]">
-                        Ödənişləri Coffeeme pulqabınızdan ödəyərək endirimlərdən faydalanın
+                    {translations[language]["section-title-3"]}
                     </h1>
                     <motion.img
-                    initial={{ opacity: 0, x: -50, scale: 0.85 }}
-                    whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    viewport={{ once: true }}
-                    className="absolute left-0  md:-top-28 sm:-top-40 -top-36  lg:max-w-80 sm:max-w-60 max-w-36"
-                    src={bgimage}
-                    alt="cup"
-                />
+                        initial={{ opacity: 0, x: -50, scale: 0.85 }}
+                        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.8 }}
+                        viewport={{ once: true }}
+                        className="absolute left-0  md:-top-28 sm:-top-40 -top-36  lg:max-w-80 sm:max-w-60 max-w-36"
+                        src={bgimage}
+                        alt="cup"
+                    />
                 </motion.div>
                 {/* Right Side: Text & Button */}
 

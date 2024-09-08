@@ -1,8 +1,12 @@
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
 import logo from '../assets/logo.png';
+import translations from "../translations.json";
+import { LanguageContext } from "../context/languageContext";
+import { useContext } from "react";
 
 const SubmitModal = ({ isOpen, onClose }) => {
+    const { language } = useContext(LanguageContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -13,20 +17,20 @@ const SubmitModal = ({ isOpen, onClose }) => {
         <Modal open={isOpen} onClose={onClose} center>
             <div className="md:p-12 sm:p-8 p-4 bg-gradient-to-br from-[#f3f4f50f] to-[#54be9539]">
                 <div className="text-center my-6 md:mb-0">
-                    <img src={logo} alt="Coffeeme Logo" className="md:h-20 sm:h-12 h-10 mx-auto" />
-                    <h1 className="md:text-2xl text-xl font-bold mt-2 text-[#1B1B1D]">
+                    <img src={logo} alt="Coffeeme Logo" className="md:h-20 sm:h-12 h-10 sm:mb-10 mx-auto" />
+                    {/* <h1 className="md:text-2xl text-xl font-bold mt-2 text-[#1B1B1D]">
                         First One’s On Us!
-                    </h1>
+                    </h1> */}
                     <div className="mt-4">
                         <form onSubmit={handleSubmit} className="flex flex-col items-center md:gap-4">
                             <input
                                 type="text"
-                                placeholder="Ad Soyad"
+                                placeholder={translations[language]["fullname"]}
                                 className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
                             />
                             <input
                                 type="email"
-                                placeholder="E-mail"
+                                placeholder={translations[language]["email"]}
                                 className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
                             />
                             <div className='flex gap-4 items-center justify-center mb-5'>
@@ -40,14 +44,14 @@ const SubmitModal = ({ isOpen, onClose }) => {
                                     </svg>
                                 </label>
                             </div>
-                                <p className='text-gray text-xs pb-2'>Bildirimlərdən xəbərdar olmaq istəyirsinizmi?</p>
+                                <p className='text-gray text-xs pb-2'>{translations[language]["notification"]}</p>
 
                             </div>
                             <button
                                 type="submit"
                                 className="sm:p-3 p-2 bg-green text-pink rounded-full hover:bg-green-700 transition-all md:w-40 sm:w-36 w-32"
                             >
-                                SUBSCRIBE
+                               {translations[language]["subscribe"]}
                             </button>
                         </form>
                     </div>
