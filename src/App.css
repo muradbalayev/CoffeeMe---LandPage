@@ -10,8 +10,9 @@
 
 :root{
   --text-green: #214440;
-  --button-bg: #F7D2BB;
   --text-gray: #64646A;
+  --text-pink: #F7D2BB;
+  --button-bg: #F7D2BB;
 }
 
 header{
@@ -45,6 +46,18 @@ header h1{
   color: var(--text-gray);
 }
 
+.text-green{
+  color: var(--text-green);
+}
+
+.text-pink{
+  color: var(--text-pink);
+}
+
+.bg-green{
+  background-color: var(--text-green);
+}
+
 
 
 /* @media (min-width: 500px) {
@@ -65,13 +78,13 @@ header h1{
 
 @media (min-width: 773px) {
   header{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   section{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .btn-pink{
@@ -82,7 +95,9 @@ header h1{
     font-size: 3.5rem;
     line-height: 1.4; 
   }
+
  
+
   .btn-pink{
     padding: 14px;
   }
@@ -92,5 +107,16 @@ header h1{
   header h1{
     font-size: 4.5rem;
     line-height: 1.4; 
+  }
+
+  header{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+
+  section{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
