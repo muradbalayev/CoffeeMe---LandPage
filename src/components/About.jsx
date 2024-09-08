@@ -29,7 +29,7 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="absolute left-0 sm:top-16 top-52 lg:max-w-80 sm:max-w-60 max-w-36  "
+                className={`absolute left-0 sm:top-16 ${language === "ru" ? "top-72" : "top-64"} lg:max-w-80 sm:max-w-60 max-w-36`}
                 src={leftcup}
                 alt="cup"
             />
