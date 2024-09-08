@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCircleCheck } from "react-icons/fa6";
-import rightcup from '../assets/rightcup.png'
+import leftcup from '../assets/leftcup.png'
 import { useState } from "react";
 import SubmitModal from "./Modal";
 
@@ -21,11 +21,11 @@ const PricingPlans = () => {
                 Plans
             </motion.h1>
             <motion.img
-                initial={{ opacity: 0, x: 50, scale: 0.85 }}
+                initial={{ opacity: 0, x: -50, scale: 0.85 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="absolute right-0 -top-4 lg:max-w-80 md:max-w-60 max-w-44" src={rightcup} alt="cup" />
+                className="absolute left-0 -top-4 lg:max-w-80 md:max-w-60 max-w-44" src={leftcup} alt="cup" />
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-20 mb-6 ">
                 {/* Free Plan */}
                 <motion.div

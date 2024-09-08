@@ -50,6 +50,11 @@ header h1 {
   border-radius: 100%;
 }
 
+.btn-lang{
+  font-weight: 500;
+  color: #214440;
+}
+
 footer .btn{
   background-color: var(--button-bg);
   color: var(--text-green);

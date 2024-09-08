@@ -77,7 +77,7 @@ const OrderNow = () => {
                 <motion.img
                     initial={{ opacity: 0, x: 50, scale: 0.85 }}
                     whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
                     viewport={{ once: true }}
                     className="absolute right-0 sm:top-0 -top-20 lg:max-w-60 sm:max-w-40 max-w-32"
                     src={littleCup}

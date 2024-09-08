@@ -1,8 +1,10 @@
-import { IoCard } from "react-icons/io5";
 import { LuFlame } from "react-icons/lu";
-import { BiCoffeeTogo } from "react-icons/bi";
+import { FaWallet } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import leftcup from '../assets/leftcup.png'
+import littleCup from "../assets/littleCup.png";
+
+import { TbGiftCardFilled } from "react-icons/tb";
 
 
 
@@ -21,7 +23,16 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="absolute left-0 sm:top-16 top-48 lg:max-w-80 sm:max-w-60 max-w-36  " src={leftcup} alt="cup" />
+                className="absolute left-0 sm:top-16 top-52 lg:max-w-80 sm:max-w-60 max-w-36  " src={leftcup} alt="cup" />
+            <motion.img
+                initial={{ opacity: 0, x: 50, scale: 0.85 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="absolute right-0 sm:top-96 top-[600px] lg:max-w-56 sm:max-w-40 max-w-32"
+                src={littleCup}
+                alt="cup"
+            />
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 sm:px-5 px-12">
                 <motion.div
                     className="px-6 py-8 flex flex-col gap-3 shadow-lg  border border-gray-100 rounded-2xl"
@@ -35,7 +46,7 @@ const About = () => {
                         CoffeeMe den 10 məhsul alana 1 məhsul hədiyyə.
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
-                        <IoCard className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10" color="#214440" />
+                        <TbGiftCardFilled className="lg:w-60 lg:h-60 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10" color="#214440" />
                     </div>
                 </motion.div>
                 <motion.div
@@ -60,12 +71,12 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    <h3 className="font-bold sm:text-2xl text-xl">Plans</h3>
+                    <h3 className="font-bold sm:text-2xl text-xl">MeWallet</h3>
                     <p className="text-gray sm:text-base text-sm">
                         CoffeeMe Free və Premium planlarından faydalana bilərsiniz.
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
-                        <BiCoffeeTogo className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10" color="#214440" />
+                        <FaWallet className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-28 h-28 lg:pt-10" color="#214440" />
                     </div>
                 </motion.div>
             </div>
