@@ -10,9 +10,11 @@ function App() {
   return (
     <div className='max-w-[1440px] mx-auto overflow-hidden'>
       <Header />
+      <div className="bg-gradient-to-br from-[#f3f4f50f] to-[#54be9539]">
       <About />
       <PricingPlans />
       <OrderNow/>
+      </div>
     </div>
   )
 }

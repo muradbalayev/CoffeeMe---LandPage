@@ -14,14 +14,14 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="font-extrabold sm:my-24 my-16 sm:text-4xl text-3xl text-center mx-auto">Öz zövqünüzə uyğun məhsulları və kofeşopları seçin və sizə uyğun endirimli məhsulları görün.</motion.h1>
+                className="sm:w-4/5 font-extrabold sm:my-24 my-16 sm:text-4xl text-3xl text-center mx-auto">Öz zövqünüzə uyğun məhsulları və kofeşopları seçin və sizə uyğun endirimli məhsulları görün.</motion.h1>
             {/* Images */}
             <motion.img
                 initial={{ opacity: 0, x: -50, scale: 0.85 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="absolute left-0 top-16 max-w-80 md:block hidden" src={leftcup} alt="cup" />
+                className="absolute left-0 top-16 lg:max-w-80 max-w-60 md:block hidden" src={leftcup} alt="cup" />
           
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 lg:px-5">

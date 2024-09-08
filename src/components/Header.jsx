@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 
 import logo from '../assets/logo.png'
-import mobileapp from '../assets/image.png'
+import mobileapp from '../assets/mobileapp1.png'
 
 const Header = () => {
     return (
@@ -68,8 +68,8 @@ const Header = () => {
                     </motion.a>
                 </div>
             </motion.nav>
-            <div className="h-full grid sm:grid-cols-2 sm:pt-[30px] pt-12">
-                <div className="section__left flex flex-col justify-center">
+            <div className="h-full grid sm:grid-cols-2 sm:pt-0 pt-12">
+                <div className="section__left flex flex-col justify-start sm:mt-20">
                     <motion.h1
                         initial={{ opacity: 0, y: 50, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
