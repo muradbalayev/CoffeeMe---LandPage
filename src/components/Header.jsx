@@ -50,7 +50,7 @@ const Header = () => {
                 <div className="logo flex items-center md:min-w-60 sm:min-w-40 sm:max-w-60 max-w-44 min-w-36 md:max-w-72">
                     <img alt="logo" className="object-contain" src={logo} />
                 </div>
-                <div className="flex sm:flex-row flex-col sm:items-center items-end justify-center gap-3">
+                <div className="flex sm:flex-row flex-col-reverse sm:items-center items-end justify-center gap-3">
                 <div className="lang-switcher flex p-1 border border-gray-300 rounded-md">
                         {filteredLanguages.map(lang => (
                             <button
