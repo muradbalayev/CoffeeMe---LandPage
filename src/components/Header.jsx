@@ -111,7 +111,7 @@ const Header = () => {
                 </div>
             </motion.nav>
             <div className="h-full grid sm:grid-cols-2 sm:pt-0 pt-12">
-                <div className="section__left flex flex-col justify-start sm:mt-20">
+                <div className="header__left flex flex-col justify-start sm:mt-20">
                     <motion.h1
                         initial={{ opacity: 0, y: 50, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -196,7 +196,7 @@ const Header = () => {
                         duration: 1,
                         ease: [0.25, 0.1, 0.25, 1],
                     }}
-                    className="section__right relative sm:flex-row flex-col flex justify-center items-start sm:px-5 px-0 pb-16 w-full mx-auto"
+                    className="header__right relative sm:flex-row flex-col flex justify-center items-start sm:px-5 px-0 sm:pb-0 pb-10 w-full mx-auto"
                 >
                     <div className="relative pb-12 sm:pr-0 pr-3">
                         <img
