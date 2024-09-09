@@ -28,7 +28,7 @@ const SubmitModal = ({ isOpen, onClose }) => {
 
     try {
       // Send data to backend
-      const response = await fetch("http://localhost:5000/api/subscribers", {
+      const response = await fetch("http://localhost:5000/api/subribers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,14 +39,14 @@ const SubmitModal = ({ isOpen, onClose }) => {
       const data = await response.json();
       if (response.ok) {
         toast.success(translations[language]["thanks"]);
-        console.log(data);
-        onClose();
+        onClose(); // Close modal on success
       } else {
-        toast.error(data.error || "Error submitting form");
+        toast.error(data.error || translations[language]["errorSubmittingForm"]);
       }
     } catch (err) {
-      console.log(err);
-      toast.error(err || "Error submitting form");
+      // Handle request error
+      console.error("Request error:", err);
+      toast.error(translations[language]["errorSubmittingForm"]);
     }
   };
 

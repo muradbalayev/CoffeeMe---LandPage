@@ -40,7 +40,8 @@
     "notification":"Bildirimlərdən xəbərdar olmaq istəyirsinizmi?",
     "subscribe": "Abunə olun",
     "contact": "CoffeeMe ilə əlaqə",
-    "thanks": "Abunə olduğunuz üçün təşəkkürlər!"
+    "thanks": "Abunə olduğunuz üçün təşəkkürlər!",
+    "errorSubmittingForm": "Müraciət göndərilərkən xəta baş verdi.Zəhmət olmasa yenidən cəhd edin."
   },
   "en": {
     "order": "ORDER NOW",
@@ -83,7 +84,8 @@
     "notification":"Want to be notified of notifications?",
     "subscribe": "Subscribe",
     "contact": "Contact CoffeeMe",
-    "thanks": "Thank you for subscribing!"
+    "thanks": "Thank you for subscribing!",
+    "errorSubmittingForm": "Error submitting Form"
   },
   "ru": {
     "order": "ЗАКАЗАТЬ СЕЙЧАС",
@@ -126,7 +128,7 @@
     "notification":"Хотите получать уведомления об уведомлениях?",
     "subscribe": "Подписаться",
     "contact": "Связаться с CoffeeMe",
-    "thanks": "Спасибо за подписку!"
-
+    "thanks": "Спасибо за подписку!",
+    "errorSubmittingForm": "Ошибка при отправке формы"
   }
 }

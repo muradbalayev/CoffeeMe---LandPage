@@ -32,29 +32,29 @@ const Footer = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         try {
-            // Send data to backend
-            const response = await fetch('http://localhost:5000/api/subscribers', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            const data = await response.json();
-            if (response.ok) {
-                toast.success(translations[language]["thanks"]);
-                console.log(data)
-            } else {
-                toast.error(data.error || 'Error submitting form');
-            }
+          // Send data to backend
+          const response = await fetch("http://localhost:5000/api/subribers", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+    
+          const data = await response.json();
+          if (response.ok) {
+            toast.success(translations[language]["thanks"]);
+          } else {
+            toast.error(data.error || translations[language]["errorSubmittingForm"]);
+          }
         } catch (err) {
-            console.log(err)
-            toast.error(err || 'Error submitting form');
+          // Handle request error
+          console.error("Request error:", err);
+          toast.error(translations[language]["errorSubmittingForm"]);
         }
-    };
+      };
 
     return (
         <footer className="py-10">
