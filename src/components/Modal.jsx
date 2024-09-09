@@ -28,7 +28,7 @@ const SubmitModal = ({ isOpen, onClose }) => {
 
     try {
       // Send data to backend
-      const response = await fetch("http://localhost:5000/api/subribers", {
+      const response = await fetch("http://localhost:5000/api/subscribers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
