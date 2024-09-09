@@ -76,7 +76,7 @@ const Footer = () => {
                                     placeholder={translations[language]["fullname"]}
                                     value={formData.fullName}
                                     onChange={handleChange}
-                                    className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
+                                    className="p-3 rounded-full text-sm border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-72"
                                 />
                                 <input
                                     type="email"
@@ -85,7 +85,7 @@ const Footer = () => {
                                     placeholder={translations[language]["email"]}
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="p-3 rounded-full border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-64"
+                                    className="p-3 rounded-full text-sm border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-72"
                                 />
                                 <div className='flex gap-4 items-center justify-center mb-5 ps-2'>
                                         <input

@@ -86,7 +86,7 @@ const PricingPlans = () => {
                         <motion.button onClick={() => setModalShow(true)}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.8 }}
-                            className=" mx-auto  px-6 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
+                            className="mx-auto px-6 mt-4 py-4 bg-green text-pink font-semibold rounded-full hover:bg-green-800 transition duration-300"
                         >
                            {translations[language]["order"]}
                         </motion.button>

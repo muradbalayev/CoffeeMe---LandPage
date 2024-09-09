@@ -12,7 +12,6 @@ function App() {
 
   return (
     <LanguageProvider>
-
       <div className='max-w-[1920px] mx-auto overflow-hidden'>
         <Header />
         <div className="bg-gradient-to-br from-[#f3f4f50f] to-[#54be9539]">

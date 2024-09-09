@@ -16,9 +16,6 @@ import { LanguageContext } from "../context/languageContext";
 
 const Header = () => {
     const [modalShow, setModalShow] = useState(false);
-    //   const [language, setLanguage] = useState(
-    //     localStorage.getItem("language") || "az"
-    //   );
 
     const { language, changeLanguage } = useContext(LanguageContext);
 
