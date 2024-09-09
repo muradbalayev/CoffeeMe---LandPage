@@ -19,7 +19,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="sm:w-4/5 font-extrabold sm:my-24 my-16 sm:text-4xl text-3xl text-center mx-auto"
+                className="sm:w-4/5 text-[#1B1B1D] font-extrabold sm:my-24 my-16 sm:text-4xl text-3xl text-center mx-auto"
             >
                 {translations[language]["section-title-1"]}
             </motion.h1>

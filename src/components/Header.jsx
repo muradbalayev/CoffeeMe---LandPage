@@ -119,7 +119,7 @@ const Header = () => {
                             duration: 1,
                             ease: [0.25, 0.1, 0.25, 1],
                         }}
-                        className="font-extrabold sm:max-w-[550px] sm:mb-16 mb-10 sm:text-left text-center mx-auto max-w-[300px]"
+                        className="font-extrabold sm:max-w-[550px] text-[#1B1B1D] sm:mb-16 mb-10 sm:text-left text-center mx-auto max-w-[300px]"
                     >
                         {translations[language]["header-title"]}
                     </motion.h1>

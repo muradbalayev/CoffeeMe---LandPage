@@ -19,7 +19,7 @@ const PricingPlans = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], }}
                 viewport={{ once: true }}
-                className="font-extrabold sm:mb-16 mb-10 sm:text-4xl text-3xl text-center"
+                className="font-extrabold text-[#1B1B1D] sm:mb-16 mb-10 sm:text-4xl text-3xl text-center"
             >
               {translations[language]["plans"]}
             </motion.h1>
