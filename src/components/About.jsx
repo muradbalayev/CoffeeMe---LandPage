@@ -94,7 +94,7 @@ const About = () => {
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
                         <FaWallet
-                            className="lg:w-60 lg:h-60 sm:w-40 sm:h-40 w-28 h-28 lg:pt-20"
+                            className="lg:w-44 lg:h-44 sm:w-40 sm:h-40 w-28 h-28 "
                             color="#214440"
                         />
                     </div>
