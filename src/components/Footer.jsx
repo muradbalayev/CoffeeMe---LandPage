@@ -133,6 +133,7 @@ const Footer = () => {
                                 <motion.a
                                     href="https://www.facebook.com/profile.php?id=61565481160428"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -147,6 +148,7 @@ const Footer = () => {
                                 <motion.a
                                     href="https://www.instagram.com/coffeemeapp"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -160,6 +162,7 @@ const Footer = () => {
                                 <motion.a
                                     href="https://www.tiktok.com/@coffeeme.app"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -173,6 +176,7 @@ const Footer = () => {
                                 <motion.a
                                     href="https://www.linkedin.com/company/coffeemee"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,

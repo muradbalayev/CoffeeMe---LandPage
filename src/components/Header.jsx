@@ -80,6 +80,7 @@ const Header = () => {
                     </div>
                     <div className="socials flex md:gap-3 gap-2  items-center">
                         <motion.a
+                        rel="noopener noreferrer"
                             href="https://www.facebook.com/profile.php?id=61565481160428"
                             target="_blank"
                             className="btn-pink"
@@ -95,6 +96,7 @@ const Header = () => {
                         <motion.a
                             href="https://www.instagram.com/coffeemeapp"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -108,6 +110,7 @@ const Header = () => {
                         <motion.a
                             href="https://www.tiktok.com/@coffeeme.app"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -121,6 +124,7 @@ const Header = () => {
                         <motion.a
                             href="https://www.linkedin.com/company/coffeemee"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
