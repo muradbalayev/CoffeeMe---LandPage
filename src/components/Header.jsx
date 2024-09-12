@@ -10,9 +10,11 @@ import translations from "../translations.json";
 
 import logo from "../assets/logo.png";
 import mobileapp from "../assets/mobileapp1.png";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SubmitModal from "./Modal";
 import { LanguageContext } from "../context/languageContext";
+
+/* global fbq */
 
 const Header = () => {
     const [modalShow, setModalShow] = useState(false);
@@ -33,6 +35,20 @@ const Header = () => {
     const filteredLanguages = languages.filter((lang) => lang.code !== language);
 
     const [imageLoaded, setImageLoaded] = useState(false);
+
+    useEffect(() => {
+        // Inject Meta Pixel script
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1582357232704839');
+        fbq('track', 'PageView');
+      }, []);
 
 
     return (
@@ -64,6 +80,8 @@ const Header = () => {
                     </div>
                     <div className="socials flex md:gap-3 gap-2  items-center">
                         <motion.a
+                            href="https://www.facebook.com/profile.php?id=61565481160428"
+                            target="_blank"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -75,6 +93,8 @@ const Header = () => {
                             <FaFacebookF className="sm:w-6 sm:h-6" />
                         </motion.a>
                         <motion.a
+                            href="https://www.instagram.com/coffeemeapp"
+                            target="_blank"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -86,6 +106,8 @@ const Header = () => {
                             <RiInstagramFill className="sm:w-6 sm:h-6" />
                         </motion.a>
                         <motion.a
+                            href="https://www.tiktok.com/@coffeeme.app"
+                            target="_blank"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -97,6 +119,8 @@ const Header = () => {
                             <PiTiktokLogoFill className="sm:w-6 sm:h-6" />
                         </motion.a>
                         <motion.a
+                            href="https://www.linkedin.com/company/coffeemee"
+                            target="_blank"
                             className="btn-pink"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{
@@ -207,7 +231,7 @@ const Header = () => {
                             onLoad={() => setImageLoaded(true)}
 
                         />
-                        <div style={{ display: imageLoaded ? 'block' : 'none' }}  className="absolute sm:bottom-28 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
+                        <div style={{ display: imageLoaded ? 'block' : 'none' }} className="absolute sm:bottom-28 bottom-20 left-20 rounded-2xl md:px-4 lg:py-4 px-3 py-2 flex-col bg-white lg:max-w-60 md:max-w-44 sm:max-w-36 max-w-44">
                             <div className="flex sm:gap-2 gap-1 lg:mb-3 sm:mb-1 mb-2">
                                 <FaStar className="w-4" />
                                 <FaStar className="w-4 " />

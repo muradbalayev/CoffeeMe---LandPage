@@ -58,7 +58,7 @@ const About = () => {
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
                         <TbGiftCardFilled
-                            className="lg:w-60 lg:h-60 sm:w-40 sm:h-40 w-32 h-32 lg:pt-10"
+                            className="lg:w-60 lg:h-60 sm:w-40 sm:h-40 w-32 h-32 lg:pt-5"
                             color="#214440"
                         />
                     </div>
@@ -94,7 +94,7 @@ const About = () => {
                     </p>
                     <div className="sm:min-h-48 min-h-32 flex items-center justify-center">
                         <FaWallet
-                            className="lg:w-52 lg:h-52 sm:w-40 sm:h-40 w-28 h-28 lg:pt-10"
+                            className="lg:w-60 lg:h-60 sm:w-40 sm:h-40 w-28 h-28 lg:pt-20"
                             color="#214440"
                         />
                     </div>

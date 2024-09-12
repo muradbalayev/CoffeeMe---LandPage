@@ -32,29 +32,29 @@ const Footer = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         try {
-          // Send data to backend
-          const response = await fetch("http://localhost:5000/api/subscribers", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          });
-    
-          const data = await response.json();
-          if (response.ok) {
-            toast.success(translations[language]["thanks"]);
-          } else {
-            toast.error(data.error || translations[language]["errorSubmittingForm"]);
-          }
+            // Send data to backend
+            const response = await fetch("http://localhost:5000/api/subscribers", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                toast.success(translations[language]["thanks"]);
+            } else {
+                toast.error(data.error || translations[language]["errorSubmittingForm"]);
+            }
         } catch (err) {
-          // Handle request error
-          console.error("Request error:", err);
-          toast.error(translations[language]["errorSubmittingForm"]);
+            // Handle request error
+            console.error("Request error:", err);
+            toast.error(translations[language]["errorSubmittingForm"]);
         }
-      };
+    };
 
     return (
         <footer className="py-10">
@@ -88,12 +88,12 @@ const Footer = () => {
                                     className="p-3 rounded-full text-sm border border-gray-300 focus:outline-none focus:border-green-400 mb-4 md:mb-0 md:mr-4 w-72"
                                 />
                                 <div className='flex gap-4 items-center justify-center mb-5 ps-2'>
-                                        <input
-                                            type="checkbox"
-                                            name="wantsMessages"
-                                            checked={formData.wantsMessages}
-                                            onChange={handleChange} />
-                                    
+                                    <input
+                                        type="checkbox"
+                                        name="wantsMessages"
+                                        checked={formData.wantsMessages}
+                                        onChange={handleChange} />
+
                                     <p className='text-gray text-xs'>{translations[language]["notification"]}</p>
 
                                 </div>
@@ -131,6 +131,8 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <motion.a
+                                    href="https://www.facebook.com/profile.php?id=61565481160428"
+                                    target="_blank"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -139,9 +141,12 @@ const Footer = () => {
                                     }}
                                     className="btn"
                                 >
+
                                     <FaFacebookF size={25} />
                                 </motion.a>
                                 <motion.a
+                                    href="https://www.instagram.com/coffeemeapp"
+                                    target="_blank"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -153,6 +158,8 @@ const Footer = () => {
                                     <RiInstagramFill size={25} />
                                 </motion.a>
                                 <motion.a
+                                    href="https://www.tiktok.com/@coffeeme.app"
+                                    target="_blank"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
@@ -164,6 +171,8 @@ const Footer = () => {
                                     <PiTiktokLogoFill size={25} />
                                 </motion.a>
                                 <motion.a
+                                    href="https://www.linkedin.com/company/coffeemee"
+                                    target="_blank"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{
                                         scale: 0.8,
