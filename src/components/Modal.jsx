@@ -59,9 +59,7 @@ const SubmitModal = ({ isOpen, onClose }) => {
             alt="Coffeeme Logo"
             className="md:h-20 sm:h-12 h-10 sm:mb-10 mx-auto"
           />
-          {/* <h1 className="md:text-2xl text-xl font-bold mt-2 text-[#1B1B1D]">
-                        First One’s On Us!
-                    </h1> */}
+
           <div className="mt-4">
             <form
               onSubmit={handleSubmit}
